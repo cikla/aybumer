@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yıldönümümüz Kutlu Olsun Aşkım</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Kalam&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="password-protection">
+      <div class="password-box">
+        <h2>Sadece ikimize özel küçük bir sır...</h2>
+        <p>Lütfen şifreyi gir aşkım.</p>
+        <input type="password" id="password-input" placeholder="Şifre" />
+        <button onclick="checkPassword()">Giriş</button>
+        <p id="wrong-password" style="display: none; color: red">
+          Bu değil, tekrar dene!
+        </p>
+      </div>
+    </div>
+
+    <div id="main-content" style="display: none">
+      <header class="main-header">
+        <div class="header-content">
+          <img
+            src="images/biz.jpg"
+            alt="Biz"
+            class="header-photo polaroid"
+          />
+          <div class="header-text">
+            <h1>Harika karım [Eşinizin Adı]'a</h1>
+            <h2>[Sayı]. Yıldönümümüz Kutlu Olsun</h2>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="our-story" class="paper-section">
+          <h2 class="section-title taped-title">Hikayemiz: Zaman Tüneli</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content left">
+                <h3>Tanıştığımız Gün</h3>
+                <img src="images/tanisma.jpg" alt="Tanışma Anı" class="timeline-photo">
+                <p>
+                  [Tarih] - Nasıl tanıştığınıza dair kısa bir hikaye. Ne
+                  düşünüyordun, o ne giyiyordu, hissettiğin o kıvılcım.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content right">
+                <h3>İlk Randevumuz</h3>
+                <img src="images/ilkrandevu.jpg" alt="İlk Randevu" class="timeline-photo">
+                <p>
+                  [Tarih] - Nereye gittiniz? Ne yaptınız? O günden komik ya da
+                  tatlı bir anı.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content left">
+                <h3>Nişan</h3>
+                <img src="images/nisan.jpg" alt="Nişan" class="timeline-photo">
+                <p>
+                  [Tarih] - Evlenme teklifinin hikayesi. Gergin miydin? Şaşırdı
+                  mı?
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content right">
+                <h3>Düğün Günümüz</h3>
+                <img src="images/dugungunu.jpg" alt="Düğün Günü" class="timeline-photo">
+                <p>
+                  [Tarih] - Düğününüzden en sevdiğin anı. Yeminler, dans, sadece
+                  ikinize özel bir an.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="love-letter" class="paper-section">
+          <h2 class="section-title taped-title">Aşkıma Mektup</h2>
+          <div class="letter-content">
+            <p>Benim Sevgili [Eşinizin Adı]'m,</p>
+            <p>
+              Bu gün, [Sayı] yıl önce, hayatımızın en güzel bölümünü başlattık.
+              Burada oturmuş paylaştığımız tüm anları düşünürken, kalbim o kadar
+              çok sevgi ve minnetle dolu ki...
+            </p>
+            <p>
+              [Kişisel, içten mektubunuza burada devam edin. En önemli kısım
+              bu!]
+            </p>
+            <p>Tüm aşkımla, sonsuza dek,</p>
+            <p>[Adınız]</p>
+          </div>
+        </section>
+
+        <section id="gallery" class="paper-section">
+          <h2 class="section-title taped-title">Fotoğraf Albümümüz</h2>
+          <div class="photo-gallery">
+            <div class="polaroid">
+              <img src="images/ilkgunler/IMG-20230716-WA0010.jpg" alt="İlk Günler 1" />
+              <p>İlk Günler</p>
+            </div>
+            <div class="polaroid">
+              <img src="images/ilkgunler/IMG-20230716-WA0018.jpg" alt="İlk Günler 2" />
+              <p>İlk Günler</p>
+            </div>
+            <div class="polaroid">
+              <img src="images/ilkgunler/IMG-20230720-WA0009.jpg" alt="İlk Günler 3" />
+              <p>İlk Günler</p>
+            </div>
+            <div class="polaroid">
+              <img src="images/ilkgunler/IMG-20230725-WA0003.jpg" alt="İlk Günler 4" />
+              <p>İlk Günler</p>
+            </div>
+          </div>
+          <h2 class="section-title taped-title">Seyahatlerimiz</h2>
+          <div class="photo-gallery">
+            <div class="polaroid">
+              <img src="images/seyahat/IMG_20240313_105006.jpg" alt="Seyahat 1" />
+              <p>Yol Anıları</p>
+            </div>
+            <div class="polaroid">
+              <img src="images/seyahat/IMG_20240313_105623.jpg" alt="Seyahat 2" />
+              <p>Keşifler</p>
+            </div>
+            <div class="polaroid">
+              <img src="images/seyahat/IMG_20240313_114942.jpg" alt="Seyahat 3" />
+              <p>Manzaralar</p>
+            </div>
+            <div class="polaroid">
+              <img src="images/seyahat/IMG_20240316_135502.jpg" alt="Seyahat 4" />
+              <p>Uzaklarda</p>
+            </div>
+             <div class="polaroid">
+              <img src="images/seyahat/IMG_20240831_130056.jpg" alt="Seyahat 5" />
+              <p>Macera</p>
+            </div>
+             <div class="polaroid">
+              <img src="images/seyahat/IMG_20250721_211205.jpg" alt="Seyahat 6" />
+              <p>Anılar</p>
+            </div>
+             <div class="polaroid">
+              <img src="images/seyahat/IMG_20250723_103448.jpg" alt="Seyahat 7" />
+              <p>Gezmeler</p>
+            </div>
+             <div class="polaroid">
+              <img src="images/seyahat/IMG_20250723_152813.jpg" alt="Seyahat 8" />
+              <p>Yeni Yerler</p>
+            </div>
+          </div>
+          <h2 class="section-title taped-title">Sadece Şapşallık</h2>
+          <div class="photo-gallery">
+            <div class="polaroid">
+              <img src="images/sadecesapsallik/IMG_20250723_152804.jpg" alt="Şapşallık" />
+              <p>O an :)</p>
+            </div>
+          </div>
+          <h2 class="section-title taped-title">Arkadaşlar ve Aileyle</h2>
+          <div class="photo-gallery">
+            <div class="polaroid">
+              <img src="images/arkadaslarveaile/IMG_20240512_174135.jpg" alt="Arkadaşlar ve Aile" />
+              <p>Sevdiklerimizle</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="reasons-i-love-you" class="paper-section">
+          <h2 class="section-title taped-title">Seni Sevmemin [Sayı] Nedeni</h2>
+          <ul>
+            <li>Güldüğünde gözlerinin parlaması.</li>
+            <li>Beni nasıl daha iyi hissettireceğini her zaman bilmen.</li>
+            <li>Tanıştığın herkese karşı inanılmaz nezaketin.</li>
+            <li>[Buraya daha fazla neden ekleyin!]</li>
+          </ul>
+        </section>
+
+        <section id="playlist" class="paper-section">
+          <h2 class="section-title taped-title">Bizim Şarkı Listemiz</h2>
+          <p>Aşk hikayemizin müziği.</p>
+
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/videoseries?si=GuxbeXowrS_eb0l0&amp;controls=0&amp;list=PL9gwtN4pCU9kAuiqpqccdmVPXI_YyA4zk"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <p class="note">Aşkımızın şarkıları.</p>
+        </section>
+      </main>
+
+      <footer>
+        <p>Aşkla yapıldı, aşkım için. Yıldönümümüz kutlu olsun.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
