@@ -2,7 +2,7 @@ function checkPassword() {
   // --- ÖNEMLİ ---
   // Bu şifreyi kişisel ve gizli bir şeyle değiştirin!
   // Bu, eşinizin girmesi gereken şifredir.
-  const correctPassword = '1'; // örn: "25.10.2015" veya "askim"
+  const correctPassword = '26.Temmuz.2023'; // örn: "25.10.2015" veya "askim"
 
   const passwordInput = document.getElementById('password-input').value;
   const passwordProtection = document.getElementById('password-protection');
