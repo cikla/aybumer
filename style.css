@@ -267,3 +267,31 @@ footer {
     border-radius: 6px;
     margin-bottom: 15px;
 }
+
+/* Mobile Responsive Timeline */
+@media screen and (max-width: 768px) {
+    /* Hide the center line */
+    .timeline::after {
+        display: none;
+    }
+
+    /* Make all items full width and remove horizontal positioning */
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item.left,
+    .timeline-item.right {
+        left: 0;
+    }
+
+    /* Move the circle indicators to the left side */
+    .timeline-item::after {
+        left: 15px;
+    }
+    .right::after {
+        left: 15px;
+    }
+}
